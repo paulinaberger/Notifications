@@ -48,7 +48,8 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
         NotificationCompat.Builder mBuilder = (NotificationCompat.Builder) new NotificationCompat.Builder(this)
                 .setSmallIcon(R.mipmap.ic_launcher)
                 .setContentTitle("simple text")
-                .setContentText("This is a simpletext for my notification");
+                .setContentText("This is a simpletext for my notification")
+                .setAutoCancel(true);
 
         Intent notificationIntent= new Intent(this, NotificationActivity.class);
 
@@ -61,4 +62,5 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
 
         mNotifyManager.notify(2, mBuilder.build());
     }
+
 }
