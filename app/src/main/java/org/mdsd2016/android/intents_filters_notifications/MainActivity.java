@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
         switch (whichView.getId()){
             case R.id.buttonToCustomNotify:
                 triggerRegularNotitication();
-                Log.i(MainActivity.TAG, "CUstom notificaiton button clicked");
+                Log.i(MainActivity.TAG, "Custom notificaiton button clicked");
                 break;
             case R.id.buttonToNotify:
                 Log.i(MainActivity.TAG, "Notification button clicked");
