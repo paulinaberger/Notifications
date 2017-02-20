@@ -1,8 +1,13 @@
 package org.mdsd2016.android.intents_filters_notifications;
 
-/**
- * Created by paulinaberger on 2017-02-20.
- */
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 
-public class NotificationActivity {
+public class NotificationActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_notification);
+    }
 }

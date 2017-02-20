@@ -45,9 +45,10 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
 
     private void triggerRegularNotitication() {
 
-        NotificationCompat.Builder mBuilder = new NotificationCompat().Builder(this)
-                .setSmallIcon(R.mipmap.ic_launcher).setContentTitle("Mynotification")
-                .setContentText("Thisisasimpletextformynotification");
+        NotificationCompat.Builder mBuilder = (NotificationCompat.Builder) new NotificationCompat.Builder(this)
+                .setSmallIcon(R.mipmap.ic_launcher)
+                .setContentTitle("simple text")
+                .setContentText("This is a simpletext for my notification");
 
         Intent notificationIntent= new Intent(this, NotificationActivity.class);
 
